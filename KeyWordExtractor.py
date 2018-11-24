@@ -37,7 +37,8 @@ class KeyWordExtractor:
                 for word in self.getKeywords(text):
                     result["keywords"].append({
                         "text": word["text"],
-                        "type": word["type"]}
+                        "type": word["type"],
+                        "file": file}
                     )
             elif file.endswith(".txt"):
                 try:
@@ -45,7 +46,8 @@ class KeyWordExtractor:
                     for word in self.getKeywords(text):
                         result["keywords"].append({
                             "text": word["text"],
-                            "type": word["type"]}
+                            "type": word["type"],
+                            "file": file}
                         )
                 except UnicodeDecodeError:
                     print("File %s decode error." % path+file)

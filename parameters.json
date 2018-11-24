@@ -3,9 +3,6 @@
   "features": {
     "entities": {
      "model": "297cc98b-a3e1-466d-b44c-b3c9a1946e89"
-    },
-    "relations": {
-     "model": "297cc98b-a3e1-466d-b44c-b3c9a1946e89"
     }
   }
 }
