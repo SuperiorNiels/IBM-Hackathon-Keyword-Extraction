@@ -18,7 +18,7 @@ def motivationGenerator(keyword, score):
     score = int(score)
     if score < 9:
         motivation["message"] = "Denied allowance because of good: {}".format(keyword)
-    elif score > 9 and score < 19:
+    elif score >= 9 and score < 19:
         motivation["message"] = "Granted allowance because of bad: {}".format(keyword)
     else:
         motivation["message"] = "Score out of bounds"
